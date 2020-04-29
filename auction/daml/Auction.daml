@@ -19,6 +19,9 @@ allocBids 0 a = (0, a with quantity = 0)
 allocBids remQty a = if remQty >= a.quantity then (remQty - a.quantity, a)
                      else (0, a with quantity = remQty)
 
+ -- Bart:  Please explain this section
+ -- Bart:                  
+
 -- Auction template visible only to the seller.
 template Auction
   with
